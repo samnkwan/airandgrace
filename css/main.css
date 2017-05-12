@@ -1,6 +1,7 @@
 body {
 	background-color:#ffffff;
 	color:#3d3d3d;
+	font-family: Helvetica, Sans-Serif;
 }
 a {
 	color:#1c68ba;
@@ -109,9 +110,9 @@ img.logo {
 .round-menu {padding-top:0;margin-top:0px;}
 .round-menu-item {margin-top:-80px;}
 
-.round-menu-item.item1 {text-align:right;margin-right:-60px;background:blue;}
+.round-menu-item.item1 {text-align:right;margin-right:-60px;background:none;}
 .round-menu-item.item2 {text-align:center;background:none;}
-.round-menu-item.item3 {text-align:left;margin-left:-60px;background:yellow;}
+.round-menu-item.item3 {text-align:left;margin-left:-60px;background:none;}
 
 .round-menu-item {position: relative;  /* background:yellow;   border:dashed #000 1px;*/ }
 
@@ -121,32 +122,32 @@ img.logo {
 .ribbon-cnr {width: 0;height: 0; }
 .cnr-tl {
   border-top: 25px solid #fff;
-  border-left: 13px solid transparent;
+  border-left: 14px solid transparent;
   border-right: 0px solid transparent;
 }
 .cnr-tr {
   border-top: 25px solid #fff;
   border-left: 0px solid transparent;
-  border-right: 13px solid transparent;<!---
+  border-right: 14px solid transparent;<!---
 }
 .cnr-bl {
   border-bottom: 25px solid #fff;
-  border-left: 13px solid transparent;
+  border-left: 14px solid transparent;
   border-right: 0px solid transparent;
 }
 .cnr-br {
   border-bottom: 25px solid #fff;
   border-left: 0px solid transparent;
-  border-right: 13px solid transparent;
+  border-right: 14px solid transparent;
 }  
-.round-menu-item.item1 .minibanner {left: 172px;}
-.round-menu-item.item2 .minibanner {left: 94px;}
-.round-menu-item.item3 .minibanner {right: 172px;}
-.minibanner {position: absolute;top: 100px;color:#fff; /*background:red;*/}
+.round-menu-item.item1 .minibanner {left: 230px;}
+.round-menu-item.item2 .minibanner {left: 106px;}
+.round-menu-item.item3 .minibanner {right: 230px;}
+.minibanner {position: absolute;top: 88px;color:#fff; /*background:red;*/}
 .minibanner-end {float:left;}	
 .minibanner-center {
 	background:#fff;
-	width:140px;
+	width:120px;
 	float:left;
 	text-align:center;
 	color:#000;
