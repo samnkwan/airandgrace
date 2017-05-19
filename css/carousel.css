@@ -92,6 +92,23 @@ body {
 @media (min-width: 2000px) {.carousel .item {height: 900px;}}
 
 
+.carousel .item .carousel-caption {
+  background: none;
+  width:380px;
+  right:50px;
+  left:auto;
+  top:140px;
+}
+
+.carousel .item .carousel-caption p { 
+  font-family: 'nella_sueregular';
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 1px 2px 10px #000;
+  text-align: left;
+}
+
+/*
 @media (max-width: 1560px) {
 	.carousel-logo{width:650px;}
 }
@@ -133,47 +150,11 @@ body {
 }
 @media (max-width: 550px) {
 	
-}
+}*/
 /*** END Responsive Carousel ***/
 
 
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Pad the edges of the mobile views a bit */
-.marketing {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: left;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
 
 
 

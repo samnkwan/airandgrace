@@ -150,7 +150,7 @@ img.logo {
 	width:120px;
 	float:left;
 	text-align:center;
-	color:#000;
+	color:#ff3399;
 	height:50px;
 	font-size:20px;
 	line-height:50px;
@@ -159,7 +159,7 @@ img.logo {
 .social {margin-top:80px;}
 .social hr.socialline {border-top: 2px solid #c4c4c4;margin:0;}
 .social-box {background:#fff;width:500px;height:60px; margin: 0 auto; margin-top:-30px;}
-.social-box .sayhello {margin:0 40px 0 20px;}
+.social-box .sayhello {margin:0 40px 0 30px; font-family: 'nella_sueregular';font-size:38px;}
 .social-box .social-icon {height:30px;width:30px;margin:0 10px;}
 
 .footer {text-align:center;height:100px;line-height:50px;margin-top:40px;}
