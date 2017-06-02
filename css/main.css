@@ -203,12 +203,13 @@ img.logo {
   border-right: 18px solid transparent;
 }
 
-.contact-triple .col-lg-6 {background-color: none; height:380px;}
+.contact-triple .col-md-6 {background-color: none; height:380px;}
 .contact-triple {margin-top:-90px;padding:0}
 
 .contact-item {background:none; width:200px;height:400px;text-align:center;padding:0;position:absolute;}
 .contact-item h3 {color: #f477ee;}
-.contact-item .social-icon {margin-top:14px;}
+
+.contact-item .social-icon {width:65px;height:65px;}
 
 .contact-item.item1{left:-30px;}
 .contact-item.item2{left:200px;/* background: purple;*/}
@@ -216,7 +217,7 @@ img.logo {
 
 .contact-item .round-item {background:#cccccc; width:160px;height:160px;border-radius:50%; margin:0 auto; overflow:hidden;}
 
-.contact-item .square-box {background:#fff; width:65px;height:65px; margin:47px 0 0 47px; }
+.contact-item .square-box {background:none; width:65px;height:65px; margin:47px 0 0 47px; }
 
 .about{margin-top:50px;}
 
