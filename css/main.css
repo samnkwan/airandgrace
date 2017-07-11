@@ -16,37 +16,17 @@ h1 {font-family: 'nella_sueregular';color:#ff3399}
 
 .navbar-trans {background: rgba(255,255,255, 0.7);border:none;}
 .navbar-trans ul {margin:35px 0 0 250px;}
-.navbar-trans li a {line-height:50px;font-size:18px; padding: 15px 22px;}
-
-/*
-.navbar-nav {
-	float:none;
-	width:920px;
-	margin:0 auto;
+.navbar-trans li a {
+	font-family: 'helvetica_neue_lt_com_lt_condensed';
+	line-height:50px;
+	font-size:22px;
+	padding: 15px 22px;
 }
 
-.navbar {
-	margin-bottom: 0;
-	border-radius: 0;
-}
-.navbar-top{
-	background-color: #fff;
-	height:120px;
-	background: url(../images/pagebg.jpg) top center no-repeat;
-}
-.navbar-bottom {
-	overflow:visible;
-}
-*/
 .navbar-inverse {
 	min-height:12px;
 	border:none;
-	/* reversed grad
-	  background: -webkit-linear-gradient(left top, #3829b8 , #fe0b3f);
-	  background: -o-linear-gradient(bottom right, #3829b8, #fe0b3f);
-	  background: -moz-linear-gradient(bottom right, #3829b8, #fe0b3f);
-	  background: linear-gradient(to bottom right, #3829b8 , #fe0b3f);
-	*/
+
 	  background: -webkit-linear-gradient(left top, #fe0b3f , #3829b8); /* For Safari 5.1 to 6.0 */
 	  background: -o-linear-gradient(bottom right, #fe0b3f, #3829b8); /* For Opera 11.1 to 12.0 */
 	  background: -moz-linear-gradient(bottom right, #fe0b3f, #3829b8); /* For Firefox 3.6 to 15 */
@@ -108,7 +88,12 @@ img.logo {
 	border:2px solid #fff;
 }
 
-.round-menu {padding-top:0;margin-top:0px;}
+.round-menu {
+	padding-top:0;
+	margin-top:0px;
+	font-family: 'helvetica_neue_lt_com_lt_condensed';
+	font-size: 26px;
+}
 .round-menu-item {margin-top:-80px;}
 
 .round-menu-item.item1 {text-align:right;margin-right:-60px;background:none;}
@@ -204,20 +189,20 @@ img.logo {
 }
 
 .contact-triple .col-md-6 {background-color: none; height:380px;}
-.contact-triple {margin-top:-90px;padding:0}
+.contact-triple {margin-top:-100px;padding:0}
 
 .contact-item {background:none; width:200px;height:400px;text-align:center;padding:0;position:absolute;}
 .contact-item h3 {color: #f477ee;}
 
-.contact-item .social-icon {width:65px;height:65px;}
+.contact-item .social-icon {width:140px;height:140px;}
 
 .contact-item.item1{left:-30px;}
 .contact-item.item2{left:200px;/* background: purple;*/}
 .contact-item.item3{right:-30px;}
 
-.contact-item .round-item {background:#cccccc; width:160px;height:160px;border-radius:50%; margin:0 auto; overflow:hidden;}
+/*.contact-item .round-item {background:#cccccc; width:160px;height:160px;border-radius:50%; margin:0 auto; overflow:hidden;}*/
 
-.contact-item .square-box {background:none; width:65px;height:65px; margin:47px 0 0 47px; }
+/*.contact-item .square-box {background:none; width:65px;height:65px; margin:47px 0 0 47px; }*/
 
 .about{margin-top:50px;}
 
@@ -237,46 +222,22 @@ img.logo {
 	padding-left:20px;
 }
 
-
-
-
-
-
-.btn {
-	border-radius:0;
-	border:0;
+.copyright {
+	font-family: 'helvetica_neue_lt_com_u_lt';
+	font-size:18px;
 }
-#footer{
-	padding:50px;
-	font-size:16px;
-	background-color: #1e1e1e;
-	color:#fff;
-
-}
-#footer a {color:#fff;}
 
 
-.navbar-form .btn-success{
-	background-color: #5cb85c;
-}
+
+
+
+
+
 
 
 /*** START responsive other bits ***/
 @media (max-width: 1200px) {
-	/* Gey block headings*/
-	/*.jumbotron h3 {margin-top:40px;}*/
-	/* Blue block */
-	.travel-experiences .col-lg-8{
-		border-right:none;
-		border-bottom:solid 1px #d9d9d9;
-		padding-bottom:30px;
-	}
-	.travel-experiences-inner {
-		padding-right: 0;
-	}
-	.featured-tour-inner {
-		padding-left: 0;
-	}
+
 }
 
 @media (max-width: 480px) {
@@ -285,35 +246,10 @@ img.logo {
 	.travel-experiences p.intro {
 		font-size: 16px;
 	}
-	.travel-experiences ul	{
-	   /* list-style-type: none;*/
-		margin-left: 18px; padding: 0;
-	}
-	.travel-experiences li {
-		font-size: 14px;
-		line-height: 20px;
-		margin:10px 0;
-	}
-	.jumbotron p {font-size:14px;}
-	.btn-default {margin-bottom:15px;}
-	.featured-tour-inner img {width:290px;}
-	.travel-experiences iframe {width:290px;}
-	#footer {padding:25px 8px;}
-	body {
-		text-align: center;
-	}
-	.social-footer{
-		margin: 0 auto;
-		margin-top:30px;
-	}
+
 }
 /*** END responsive other bits ***/
 
-/* space the sub navs */
-.dropdown-menu > li > a {
-	padding-top:5px;
-	padding-bottom:5px;
-}
 
 /*** START nav hover stuff (only do this when full menu shown)***/
 @media (min-width: 767px) {
@@ -368,8 +304,6 @@ img.logo {
 }
 
 /*** END nav hover stuff ***/
-
-
 
 
 
