@@ -70,11 +70,6 @@ img.logo {
 	font-size:16px;
 }
 
-.round-menu img {
-	width:230px;
-	border-radius:50%;
-	border:2px solid #fff;
-}
 
 .round-menu {
 	padding-top:0;
@@ -82,20 +77,41 @@ img.logo {
 	font-family: 'Helvetica Neue Lt Com Lt Con';
 	font-size: 26px;
 }
-.round-menu-item {margin-top:-80px;}
-.round-menu-item {position: relative;  /* background:yellow;   border:dashed #000 1px;*/ }
+
+.round-menu .height-holder {height:150px;}
+
+.round-menu .col-md-4{
+ /*border:solid #000 1px;*/
+ /*background: green;*/
+}
+
+.round-menu img {
+	width:100%;
+	border-radius:50%;
+	border:2px solid #fff;
+}
+.round-menu-item {
+	height:230px;
+	width:230px;
+	/*margin-top:-80px;*/
+}
+.round-menu-item {
+	position: absolute;
+	/*background:yellow;*/
+	/*border:dashed #000 1px;*/
+	top:-80px;
+}
+.round-menu-item.item1 {right:-46px}
+.round-menu-item.item3 {left:-46px}
+.round-menu-item.item2 {left:calc(50% - 115px);}
+
+.round-menu-item .minibanner {position: absolute; top:88px;}
+.round-menu-item.item1 .minibanner {right:40px;}
+.round-menu-item.item3 .minibanner {left:40px;}
+.round-menu-item.item2 .minibanner {left:calc(50% - 74px);}
 
 
-
-
-.round-menu-item.item1 {text-align:right;margin-right:-60px;background:none;}
-.round-menu-item.item2 {text-align:center;background:none;}
-.round-menu-item.item3 {text-align:left;margin-left:-60px;background:none;}
-
-
-
-
-/* Ribbon banners */
+/* START Ribbon banners ends construction */
 .ribbon-cnr {width: 0;height: 0; }
 .cnr-tl {
   border-top: 25px solid #fff;
@@ -105,7 +121,7 @@ img.logo {
 .cnr-tr {
   border-top: 25px solid #fff;
   border-left: 0px solid transparent;
-  border-right: 14px solid transparent;<!---
+  border-right: 14px solid transparent;
 }
 .cnr-bl {
   border-bottom: 25px solid #fff;
@@ -117,10 +133,7 @@ img.logo {
   border-left: 0px solid transparent;
   border-right: 14px solid transparent;
 }
-.round-menu-item.item1 .minibanner {left: 230px;}
-.round-menu-item.item2 .minibanner {left: 106px;}
-.round-menu-item.item3 .minibanner {right: 230px;}
-.minibanner {position: absolute;top: 88px;color:#fff; /*background:red;*/}
+
 .minibanner-end {float:left;}
 .minibanner-center {
 	background:#fff;
@@ -130,8 +143,9 @@ img.logo {
 	color:#ff3399;
 	height:50px;
 	font-size:20px;
-	line-height:50px;
+	line-height:56px;
 }
+/* END Ribbon banners ends construction */
 
 .social {margin-top:100px;}
 .social hr.socialline {border-top: 2px solid #c4c4c4;margin:0;}
