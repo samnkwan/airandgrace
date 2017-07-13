@@ -17,11 +17,10 @@ h1 {
 	font-size:36px;
 }
 
-
 .jumbotron p{font-size:14px;}
 
 .navbar-trans {background: rgba(255,255,255, 0.7);border:none;}
-.navbar-trans ul {margin:35px 0 0 250px;}
+.navbar-trans ul {margin:35px 0 0 350px;}
 .navbar-trans li a {
 	font-family: 'Helvetica Neue Lt Com Lt Con';
 	line-height:50px;
@@ -30,38 +29,11 @@ h1 {
 }
 
 
-li.logo-spacer{
-	width:200px;
-}
 img.logo {
 	position:absolute;
-	top:-1px;
-	margin-left:-40px;
+	top:0;
 	z-index:99;
 }
-
-
-/*** START responsive logo and navs ***/
-@media (max-width: 1200px) {
-	img.logo {height: 100px;margin-left:-20px;}
-	.navbar-top {min-height:100px;}
-	.navbar-form {margin-top: 35px;}
-	li.logo-spacer{width:0;}
-}
-
-@media (max-width: 767px) {
-	img.logo {margin-left:-30px;}
-	.form-control {width:200px;position:absolute;right:50px;top:35px;}
-	.btn-search{position:absolute;right:8px;top:35px;}
-}
-
-@media (max-width: 450px) {
-	.navbar-form {margin-top: 120px;}
-	.form-control {width:200px;left:10px;top:112px;}
-	.btn-search{width:40px;left:220px;top:112px;}
-}
-/*** END responsive logo and navs ***/
-
 
 .jumbotron {background:none;}
 
@@ -80,10 +52,6 @@ img.logo {
 
 .round-menu .height-holder {height:150px;}
 
-.round-menu .col-md-4{
- /*border:solid #000 1px;*/
- /*background: green;*/
-}
 
 .round-menu img {
 	width:100%;
@@ -103,7 +71,7 @@ img.logo {
 }
 .round-menu-item.item1 {right:-46px}
 .round-menu-item.item3 {left:-46px}
-.round-menu-item.item2 {left:calc(50% - 115px);}
+.round-menu-item.item2 {left:calc(50% - 115px)}
 
 .round-menu-item .minibanner {position: absolute; top:88px;}
 .round-menu-item.item1 .minibanner {right:40px;}
@@ -284,20 +252,42 @@ img.logo {
 
 
 
-/*** START responsive other bits ***/
 @media (max-width: 1200px) {
-
+	.round-menu-item.item1 {right:-12px}
+	.round-menu-item.item3 {left:-12px}
+	.round-menu-item {top:-50px;}
+	.round-menu .height-holder {height:200px;}
+	/*.round-menu {background: yellow;}*/
 }
+
+@media (max-width: 991px) {
+	img.logo {left:20px}
+	.navbar-fixed-top {position: static;} /* make it not fixed */
+	.navbar-trans li a {padding: 0 10px}
+	.navbar-trans ul {margin-left: 250px;}
+
+	.round-menu-item.item1 {right:10px}
+	.round-menu-item.item3 {left:10px}
+	.round-menu-item {top:40px;}
+	.round-menu .height-holder {height:300px;}
+	.round-menu {background: green;}
+}
+
+@media (max-width: 800px) {
+	.round-menu-item.item1, .round-menu-item.item3 {
+		left:calc(50% - 115px)
+	}
+	/*.round-menu {background: red;}*/
+}
+
+
 
 @media (max-width: 480px) {
 	.jumbotron {padding:0;}
 	.jumbotron h2 {font-size:25px;}
-	.travel-experiences p.intro {
-		font-size: 16px;
-	}
+
 
 }
-/*** END responsive other bits ***/
 
 
 /*** START nav hover stuff (only do this when full menu shown)***/
@@ -345,12 +335,7 @@ img.logo {
 	}
 
 }
-/* Nav submenu mobile fix */
-@media (max-width: 767px) {
-	.navbar-collapse {
-		max-height: 800px;
-	}
-}
+
 
 /*** END nav hover stuff ***/
 
@@ -382,7 +367,7 @@ img.logo {
 }
 
 /* universal page responsive */
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
 	.container-standard h1 {font-size:36px;}
 }
 @media (max-width: 320px) {
@@ -392,18 +377,7 @@ img.logo {
 	.container-standard h1 {font-size:26px;}
 	.container-standard .intro{font-size: 18px;}
 	.container-standard .p{font-size: 11px;}
-}
+}*/
 
 
 /* END UNIVERAL STANDARD PAGE LAYOUT */
-
-
-
-/* START Client Comments Block */
-.client-comments {
-	margin:20px 0;
-}
-.client-comments blockquote{
-	margin-bottom:30px;
-}
-/* END CLIENT COMMENTS BLOCK */
