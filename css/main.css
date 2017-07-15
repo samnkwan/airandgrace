@@ -18,6 +18,10 @@ h1 {
 }
 
 .jumbotron p{font-size:14px;}
+.jumbotron {
+	background:#e5e5e5;
+	margin-top:140px
+}
 
 .navbar-trans {background: rgba(255,255,255, 0.7);border:none;}
 .navbar-trans ul {margin:35px 0 0 450px;}
@@ -35,8 +39,6 @@ img.logo {
 	z-index:99;
 	left:20vw;
 }
-
-.jumbotron {background:none;}
 
 .copyright {
 	font-family: 'Helvetica Neue Lt Com U Lt';
@@ -151,7 +153,7 @@ img.logo {
 .gallery img.full {width:1130px;}
 .gallery img.square {width:610px;}
 
-.jumbotron.contact-jumbotron {background:#e5e5e5;margin-top:140px;padding:70px 0 120px 0;}
+.jumbotron.contact-jumbotron {padding:70px 0 120px 0;}
 .jumbotron.contact-jumbotron h1 {
 	font-family: 'Nella Sue Reg';
 	color:#ff3399;
@@ -246,13 +248,7 @@ img.logo {
 }
 
 
-.video-jumbotron {background:#e5e5e5;margin-top:120px;}
-
-.video-container .hero-video-wrapper {
-	width: 900px;
-	height: 500px;
-	margin: 0 auto;
-}
+.video-container .hero-video-wrapper {height: 550px;}
 
 .video-container .height-holder { height: 300px;}
 
@@ -261,21 +257,17 @@ img.logo {
 	height: 250px;
 }
 
-.video-container .video-wrapper.item1{
-	position: absolute;
-	right:15px;
+@media (max-width: 1600px) {
+	img.logo {left:16vw}
 }
-.video-container .video-wrapper.item2{
-	position: absolute;
-	left:15px;
-}
-
-
-
-
 
 @media (max-width: 1200px) {
+
 	.navbar-fixed-top {position: static;} /* make it not fixed */
+	img.logo {left:8vw}
+	.navbar-trans ul {margin-left: 350px;}
+	.jumbotron {margin-top:40px}
+
 
 	.round-menu-item.item1 {right:-12px}
 	.round-menu-item.item3 {left:-12px}
@@ -287,10 +279,10 @@ img.logo {
 }
 
 @media (max-width: 991px) {
-	img.logo {left:20px}
+	img.logo {left:2vw}
 
-	.navbar-trans li a {padding: 0 10px}
-	.navbar-trans ul {margin-left: 250px;}
+	.navbar-trans ul {margin-left: 280px;}
+	.navbar-trans li a {padding: 0 12px}
 
 	.round-menu-item.item1 {right:10px}
 	.round-menu-item.item3 {left:10px}
@@ -304,6 +296,8 @@ img.logo {
 		top:auto;bottom:0;
 		right: calc(50% - 75px);
 	}
+
+	.video-container .hero-video-wrapper {height: 450px;}
 
 	.form-group {width: 100%;}
 	.contact-container .btn-primary {width:calc(100% - 36px);}
@@ -319,10 +313,13 @@ img.logo {
 	.round-menu-item.item1, .round-menu-item.item3 {
 		left:calc(50% - 115px)
 	}
-	/*.round-menu {background: red;}*/
+	.video-container .hero-video-wrapper {height: calc(60vw);}
+
 }
 
-
+@media (max-width: 765px){
+	.navbar-trans ul {margin:0;text-align: center;}
+}
 
 @media (max-width: 530px) {
 	.social-box {width: 400%}
@@ -337,78 +334,7 @@ img.logo {
 	}
 }
 
-
-/*** START nav hover stuff (only do this when full menu shown)***/
-@media (min-width: 767px) {
-	.sidebar-nav {
-	    padding: 9px 0;
-	}
-
-	.dropdown-menu .sub-menu {
-	    left: 100%;
-	    position: absolute;
-	    top: 0;
-	    visibility: hidden;
-	    margin-top: -1px;
-	}
-
-	.dropdown-menu li:hover .sub-menu {
-	    visibility: visible;
-	}
-
-	.dropdown:hover .dropdown-menu {
-	    display: block;
-	}
-
-	.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
-	    margin-top: 0;
-	}
-
-	.navbar .sub-menu:before {
-	    border-bottom: 7px solid transparent;
-	    border-left: none;
-	    border-right: 7px solid rgba(0, 0, 0, 0.2);
-	    border-top: 7px solid transparent;
-	    left: -7px;
-	    top: 10px;
-	}
-	.navbar .sub-menu:after {
-	    border-top: 6px solid transparent;
-	    border-left: none;
-	    border-right: 6px solid #fff;
-	    border-bottom: 6px solid transparent;
-	    left: 10px;
-	    top: 11px;
-	    left: -6px;
-	}
-
+/* Hamburger overrides */
+.navbar-default .navbar-toggle {
+    border:none;
 }
-
-
-/*** END nav hover stuff ***/
-
-
-
-/*.container-standard { padding: 30px 20px;}
-.container-standard hr { border-top: 1px solid #b8b8b8;}
-.container-standard .intro{
-	font-size: 19px;
-}
-.container-standard p{
-	font-size: 16px;
-}
-.container-standard h1, .container-standard h2, .container-standard h3{
-	font-weight: bold;
-}
-.container-standard h1{
-	font-size:44px;
-}
-.container-standard h3{
-	margin-bottom: 20px;
-}
-.container-standard .col-lg-8{
-	padding-right:40px;
-}
-.container-standard .col-lg-4{
-	padding-left:30px;
-}*/
