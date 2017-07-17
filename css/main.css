@@ -318,10 +318,12 @@ img.logo {
 }
 
 @media (max-width: 765px){
-	.navbar-trans ul {margin:0;text-align: center;}
+	img.logo {height:80px;}
+	.navbar-trans ul {margin:10px 0 0;text-align: center;}
 }
 
 @media (max-width: 530px) {
+	.navbar-trans ul {margin-top:40px;}
 	.social-box {width: 400%}
 	.social-box .sayhello {
 		clear:both;
