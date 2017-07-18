@@ -188,26 +188,33 @@ img.logo {
   border-right: 18px solid transparent;
 }
 
-.contact-triple {background-color: none; height:380px;}
-.contact-triple {margin-top:-100px;padding:0}
+.contact-triple {
+	background-color: none;
+	margin-top:-100px;
+	padding:0
+}
+
+.contact-triple .row .height-holder {
+	/*border: 1px solid #000;*/
+	height: 280px;
+}
 
 .contact-item {
 	background:none;
 	width:200px;
-	height:400px;
 	text-align:center;
 	padding:0;
 	position:absolute;
 	font-family: 'Helvetica Neue Lt Com Lt Con';
 }
-.contact-item h3 {color: #f477ee;}
+.contact-item h3 {
+	color: #f477ee;
+	margin-bottom: 5px;
+}
 
 .contact-item .social-icon {width:140px;height:140px;}
 
-/*.contact-triple .row .foo {
-	border: 1px solid #000;
-	height: 400px;
-}*/
+
 
 .contact-item.item1{right:-72px;}
 .contact-item.item3{left:-72px;}
@@ -320,6 +327,13 @@ img.logo {
 @media (max-width: 765px){
 	img.logo {height:80px;}
 	.navbar-trans ul {margin:10px 0 0;text-align: center;}
+
+	.contact-triple .row .height-holder {height: 260px;}
+	.contact-item {top:20px}
+	.contact-triple {margin-top:0}
+	.contact-item.item1, .contact-item.item3 {
+		left: calc(50% - 100px);
+	}
 }
 
 @media (max-width: 530px) {
@@ -328,7 +342,6 @@ img.logo {
 	.social-box .sayhello {
 		clear:both;
 		margin-left: calc(50vw - 95px) ;
-		/*margin-left: calc(50%) ;*/
 	}
 	.social-box .social-icon-wrapper {
 		clear:both;
