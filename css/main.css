@@ -17,7 +17,6 @@ h1 {
 	font-size:36px;
 }
 
-.jumbotron p{font-size:14px;}
 .jumbotron {
 	background:#e5e5e5;
 	margin-top:140px
@@ -160,10 +159,22 @@ img.logo {
 	font-size:36px;
 	margin-top: 0;
 }
-.form-control{border-radius:0;border:none;box-shadow:none;transition:none;}
+.form-control{
+	border-radius:0;
+	border:none;
+	box-shadow:none;
+	transition:none;
+	font-size: 15px;
+}
 .form-group {width:400px;float:right;}
 .contact-text{width:400px;}
-.contact-container .btn-primary {background-color: #f477ee;float:left;font-size:16px;height:52px;width:362px;}
+.contact-text p{font-size: 16px}
+.contact-container .btn-primary {
+	background-color: #f477ee;
+	float:left;
+	font-size:18px;
+	height:52px;
+	width:362px;}
 .contact-container .btn-primary:active {background-color: #f477ee;box-shadow:none;}
 .contact-container .minibanner {position:static;}
 .contact-container .cnr-tl {
@@ -207,14 +218,19 @@ img.logo {
 	position:absolute;
 	font-family: 'Helvetica Neue Lt Com Lt Con';
 }
+.contact-item a:hover {text-decoration: none}
 .contact-item h3 {
 	color: #f477ee;
 	margin-bottom: 5px;
 }
-
-.contact-item .social-icon {width:140px;height:140px;}
-
-
+.contact-item p {
+	font-size: 15px;
+	color: #777;
+}
+.contact-item .social-icon {
+	width:140px;
+	height:140px;
+}
 
 .contact-item.item1{right:-72px;}
 .contact-item.item3{left:-72px;}
@@ -224,7 +240,6 @@ img.logo {
   border-radius:0;
   border:0;
 }
-
 
 .about{margin-top:50px;}
 
@@ -334,6 +349,7 @@ img.logo {
 	.contact-item.item1, .contact-item.item3 {
 		left: calc(50% - 100px);
 	}
+	.contact-container .height-holder{height: 480px;}
 }
 
 @media (max-width: 530px) {

@@ -17,64 +17,66 @@
 	</head>
 	<body>
       <nav class="navbar navbar-default navbar-fixed-top navbar-trans">
-       <div class="container">
-        <div><a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt="Experience New Zealand Travel"></a></li></div>
+         <div class="container">
+            <div><a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt="Air &amp; Grace"></a></li></div>
+            <div class="navbar-header">
+               <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a href="#" class="navbar-brand"></a>
+           </div>
 
-         <div class="navbar-header">
-           <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-             <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-           </button>
-           <a href="#" class="navbar-brand"></a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar">
-           <ul class="nav navbar-nav">
-             <li><a href="index.html">HOME</a></li>
-             <li><a href="about.html">ABOUT</a></li>
-                <li><a href="gallery.html">GALLERY</a></li>
-               <li><a href="video.html">VIDEO</a></li>
-               <li><a href="contact.html">CONTACT</a></li>
-           </ul>
-        </div><!--/.nav-collapse -->
-       </div>
-    </nav>
+           <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="gallery.html">GALLERY</a></li>
+                  <li><a href="video.html">VIDEO</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+           </div><!--/.nav-collapse -->
+         </div>
+      </nav>
 
    <div class="jumbotron contact-jumbotron">
    	<div class="container contact-container">
-   	<form method="post" id="frmMotorhome" role="form" data-toggle="validator" action="" >
    		<div class="row">
-   			<div class="col-sm-6 contact-form-col">
-   				<div class="form-group">
-   					<input type="text" value="" maxlength="40" class="form-control" id="name" name="name" placeholder="NAME" >
-   					<div class="help-block with-errors"></div>
-   				</div>
-   				<div class="form-group">
-   					<input type="text" value="" maxlength="40" class="form-control" id="fname" name="fname" placeholder="EMAIL" >
-   					<div class="help-block with-errors"></div>
-   				</div>
-   				<div class="form-group">
-   					<input type="text" value="" maxlength="40" class="form-control" id="fname" name="fname" placeholder="PHONE" >
-   					<div class="help-block with-errors"></div>
-   				</div>
-   				<div class="form-group">
-   					<textarea id="other" maxlength="1200" value="" name="other" class="form-control" rows="8" placeholder="MESSAGE"></textarea>
-   				</div>
-   				<div class="form-group">
-   					 <div class="minibanner">
-   							<div class="minibanner-end">
-   								<div class="ribbon-cnr cnr-tl"></div>
-   								<div class="ribbon-cnr cnr-bl"></div>
-   							</div>
-   							<button type="submit" name="send" class="btn btn-primary">SEND</button>
-   							<div class="minibanner-end">
-   							  	<div class="ribbon-cnr cnr-tr"></div>
-   								<div class="ribbon-cnr cnr-br"></div>
-   							</div>
-   						</div>
-   				</div>
+   			<div class="col-sm-6">
+               <div class="height-holder">
+                  <form method="post" id="frmMotorhome" role="form" data-toggle="validator" action="" >
+      				<div class="form-group">
+      					<input type="text" value="" maxlength="40" class="form-control" id="name" name="name" placeholder="NAME" >
+      					<div class="help-block with-errors"></div>
+      				</div>
+      				<div class="form-group">
+      					<input type="text" value="" maxlength="40" class="form-control" id="fname" name="fname" placeholder="EMAIL" >
+      					<div class="help-block with-errors"></div>
+      				</div>
+      				<div class="form-group">
+      					<input type="text" value="" maxlength="40" class="form-control" id="fname" name="fname" placeholder="PHONE" >
+      					<div class="help-block with-errors"></div>
+      				</div>
+      				<div class="form-group">
+      					<textarea id="other" maxlength="1200" value="" name="other" class="form-control" rows="8" placeholder="MESSAGE"></textarea>
+      				</div>
+      				<div class="form-group">
+      					 <div class="minibanner">
+      							<div class="minibanner-end">
+      								<div class="ribbon-cnr cnr-tl"></div>
+      								<div class="ribbon-cnr cnr-bl"></div>
+      							</div>
+      							<button type="submit" name="send" class="btn btn-primary">SEND</button>
+      							<div class="minibanner-end">
+      							  	<div class="ribbon-cnr cnr-tr"></div>
+      								<div class="ribbon-cnr cnr-br"></div>
+      							</div>
+      						</div>
+      				</div>
+               </form>
+               </div>
    			</div>
    			<div class="col-sm-6">
    				<div class="contact-text">
@@ -94,7 +96,6 @@
    				</div>
    			</div>
    		</div>
-   	</form>
    	</div>
    </div>
 
@@ -103,10 +104,10 @@
          <div class="col-sm-4">
             <div class="height-holder">
       			<div class="contact-item item1">
-                  <a href="http://google.com">
+                  <a target="_blank" href="mailto:info@airandgrace.co.nz?Subject=Hi%20there!">
                      <img class="social-icon" src="img/email-round.png">
                   </a>
-                  <a href="http://google.com">
+                  <a target="_blank" href="mailto:info@airandgrace.co.nz?Subject=Hi%20there!">
       					<h3>EMAIL</h3>
       					<p>INFO@AIRANDGRACE.CO.NZ</p>
       			</div>
@@ -115,10 +116,10 @@
          <div class="col-sm-4">
             <div class="height-holder">
       			<div class="contact-item item2">
-                  <a href="http://google.com">
+                  <a href="tel:+64-022-077-0685">
                      <img class="social-icon" src="img/phone-round.png">
                   </a>
-                  <a href="http://google.com">
+                  <a href="tel:+64-022-077-0685">
       					<h3>PHONE</h3>
       					<p>(+64) 022 077 0685</p>
                   </a>
@@ -128,12 +129,12 @@
          <div class="col-sm-4">
             <div class="height-holder">
       			<div class="contact-item item3">
-                  <a href="http://google.com">
+                  <a target="_blank" href="https://www.facebook.com/airandgraceaerials/">
                      <img class="social-icon" src="img/facebook-round.png">
                   </a>
-                  <a href="http://google.com">
+                  <a target="_blank" href="https://www.facebook.com/airandgraceaerials/">
       					<h3>FACEBOOK</h3>
-      					<p>WWW.AIRANDGRACE.CO.NZ</p>
+      					<p>/AIRANDGRACEAERIALS/</p>
                   </a>
       			</div>
    			</div>
