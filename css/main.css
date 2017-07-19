@@ -242,7 +242,7 @@ img.logo {
 }
 
 .about{margin-top:50px;}
-
+.about .block p {font-size: 15px}
 .about .block1{
 	padding-right:40px;
 	padding-left:40px;
@@ -313,7 +313,10 @@ img.logo {
 	/*.round-menu {background: green;}*/
 
 	.about .block1{border: none}
-	.about .block3{padding-left:40px;height:300px;}
+	.about .block3{
+		padding-left:40px;
+		height:300px;
+	}
 	.about .profile-img {
 		top:auto;bottom:0;
 		right: calc(50% - 75px);
@@ -362,6 +365,13 @@ img.logo {
 	.social-box .social-icon-wrapper {
 		clear:both;
 		margin-left: calc(50vw - 155px);
+	}
+	.about .block{
+		padding:0 30px;
+		padding:auto;
+	}
+	.about .block3{
+		height:320px;
 	}
 }
 
