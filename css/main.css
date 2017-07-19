@@ -1,4 +1,6 @@
+html{height:100%}
 body {
+	height:100%;
 	background-color:#ffffff;
 	color:#3d3d3d;
 	font-family: 'Helvetica Neue Lt Com Th', Helvetica, Sans-Serif;
@@ -357,7 +359,7 @@ img.logo {
 
 @media (max-width: 530px) {
 	.navbar-trans ul {margin-top:40px;}
-	.social-box {width: 400%}
+	.social-box {width: 100%}
 	.social-box .sayhello {
 		clear:both;
 		margin-left: calc(50vw - 95px) ;
