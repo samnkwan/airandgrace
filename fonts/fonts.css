@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Nella Sue Reg';
+    src: url('nella_sue/nellasue-webfont.woff2') format('woff2'),
+         url('nella_sue/nellasue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue Lt Com Lt Con';
+    src: url('neue_helvetica/HelveticaNeueLTCom-LtCn.ttf');
+}
+@font-face {
+    font-family: 'Helvetica Neue Lt Com U Lt';
+    src: url('neue_helvetica/HelveticaNeueLTCom-Th.ttf');
+}
+@font-face {
+    font-family: 'Helvetica Neue Lt Com Th';
+    src: url('neue_helvetica/HelveticaNeueLTCom-Th.ttf');
+}
