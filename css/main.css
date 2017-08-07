@@ -2,7 +2,6 @@
   --main-pink: #DC7F9B;
 }
 
-
 html{height:100%}
 body {
 	height:100%;
@@ -80,45 +79,50 @@ img.logo {
 .round-menu-item.item3 {left:-46px}
 .round-menu-item.item2 {left:calc(50% - 115px)}
 
-.round-menu-item .minibanner {position: absolute; top:88px;}
-.round-menu-item.item1 .minibanner {right:40px;}
-.round-menu-item.item3 .minibanner {left:40px;}
-.round-menu-item.item2 .minibanner {left:calc(50% - 74px);}
+.round-menu-item .minibanner {position: absolute; top:94px;}
+.round-menu-item.item1 .minibanner {right:53px;}
+.round-menu-item.item3 .minibanner {left:53px;}
+.round-menu-item.item2 .minibanner {left:53px;}
 
 
 /* START Ribbon banners ends construction */
+:root {
+  --minibanner-cnr-edge-short: 10px;
+  --minibanner-cnr-edge-long: 20px;
+}
+
 .ribbon-cnr {width: 0;height: 0; }
 .cnr-tl {
-  border-top: 25px solid #fff;
-  border-left: 14px solid transparent;
+  border-top: var(--minibanner-cnr-edge-long) solid #fff;
+  border-left: var(--minibanner-cnr-edge-short) solid transparent;
   border-right: 0px solid transparent;
 }
 .cnr-tr {
-  border-top: 25px solid #fff;
+  border-top: var(--minibanner-cnr-edge-long) solid #fff;
   border-left: 0px solid transparent;
-  border-right: 14px solid transparent;
+  border-right: var(--minibanner-cnr-edge-short) solid transparent;
 }
 .cnr-bl {
-  border-bottom: 25px solid #fff;
-  border-left: 14px solid transparent;
+  border-bottom: var(--minibanner-cnr-edge-long) solid #fff;
+  border-left: var(--minibanner-cnr-edge-short) solid transparent;
   border-right: 0px solid transparent;
 }
 .cnr-br {
-  border-bottom: 25px solid #fff;
+  border-bottom: var(--minibanner-cnr-edge-long) solid #fff;
   border-left: 0px solid transparent;
-  border-right: 14px solid transparent;
+  border-right: var(--minibanner-cnr-edge-short) solid transparent;
 }
 
 .minibanner-end {float:left;}
 .minibanner-center {
 	background:#fff;
-	width:120px;
+	width:105px;
 	float:left;
 	text-align:center;
 	color:var(--main-pink);
-	height:50px;
+	height:40px;
 	font-size:20px;
-	line-height:56px;
+	line-height:46px;
 }
 /* END Ribbon banners ends construction */
 
