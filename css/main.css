@@ -1,3 +1,8 @@
+:root {
+  --main-pink: #DC7F9B;
+}
+
+
 html{height:100%}
 body {
 	height:100%;
@@ -15,7 +20,7 @@ a:hover {
 }
 h1 {
 	font-family: 'Nella Sue Reg';
-	color:#ff3399;
+	color:var(--main-pink);
 	font-size:36px;
 }
 
@@ -59,7 +64,7 @@ img.logo {
 .round-menu img {
 	width:100%;
 	border-radius:50%;
-	border:2px solid #fff;
+	border:3px solid #fff;
 }
 
 .round-menu-item {
@@ -110,7 +115,7 @@ img.logo {
 	width:120px;
 	float:left;
 	text-align:center;
-	color:#ff3399;
+	color:var(--main-pink);
 	height:50px;
 	font-size:20px;
 	line-height:56px;
@@ -155,7 +160,7 @@ img.logo {
 .jumbotron.contact-jumbotron {padding:70px 0 120px 0;}
 .jumbotron.contact-jumbotron h1 {
 	font-family: 'Nella Sue Reg';
-	color:#ff3399;
+	color:var(--main-pink);
 	font-size:36px;
 	margin-top: 0;
 }
@@ -170,31 +175,31 @@ img.logo {
 .contact-text{width:400px;}
 .contact-text p{font-size: 16px}
 .contact-container .btn-primary {
-	background-color: #f477ee;
+	background-color: var(--main-pink);
 	float:left;
 	font-size:18px;
 	height:52px;
 	width:362px;}
-.contact-container .btn-primary:active {background-color: #f477ee;box-shadow:none;}
+.contact-container .btn-primary:active {background-color: var(--main-pink);box-shadow:none;}
 .contact-container .minibanner {position:static;}
 .contact-container .cnr-tl {
-  border-top: 26px solid #f477ee;
+  border-top: 26px solid var(--main-pink);
   border-left: 18px solid transparent;
   border-right: 0px solid transparent;
 }
 .contact-container .cnr-bl {
-  border-bottom: 26px solid #f477ee;
+  border-bottom: 26px solid var(--main-pink);
   border-left: 18px solid transparent;
   border-right: 0px solid transparent;
 }
 .contact-container .cnr-tr {
-  border-top: 26px solid #f477ee;
+  border-top: 26px solid var(--main-pink);
   border-left: 0px solid transparent;
   border-right: 18px solid transparent;
 }
 
 .contact-container .cnr-br {
-  border-bottom: 26px solid #f477ee;
+  border-bottom: 26px solid var(--main-pink);
   border-left: 0px solid transparent;
   border-right: 18px solid transparent;
 }
@@ -220,16 +225,17 @@ img.logo {
 }
 .contact-item a:hover {text-decoration: none}
 .contact-item h3 {
-	color: #f477ee;
+	color: var(--main-pink);
 	margin-bottom: 5px;
 }
 .contact-item p {
 	font-size: 15px;
 	color: #777;
 }
+
 .contact-item .social-icon {
-	width:140px;
-	height:140px;
+	width:130px;
+	height:130px;
 }
 
 .contact-item.item1{right:-72px;}
@@ -266,7 +272,7 @@ img.logo {
 	position: absolute;
 	top:-110px;
 	right:0;
-	border: 1px solid #fff;
+	border: 3px solid #fff;
 	z-index:999;
 }
 
