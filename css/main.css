@@ -12,10 +12,11 @@ body {
  p {font-size: 16px;}
 
 a {
-	color:#1c68ba;
+	color:#777;
 }
 a:hover {
-	color:#0b4294;
+	color:#777;
+   text-decoration: none;
 }
 h1 {
 	font-family: 'Nella Sue Reg';
@@ -44,6 +45,8 @@ img.logo {
 	z-index:99;
 	left:20vw;
 }
+
+.top-nav-spacer {height:160px;}
 
 .copyright {
 	font-family: 'Helvetica Neue Lt Com U Lt';
@@ -152,6 +155,17 @@ img.logo {
 .social-box .social-icon {height:30px;width:30px;margin:0 10px;}
 
 .footer {text-align:center;height:100px;line-height:50px;margin-top:40px;}
+
+.gallery-index .item { margin-bottom: 40px;}
+.gallery-index .item img {
+   width: 100%;
+   margin-bottom: 16px;
+}
+.gallery-index .item .title{
+   font-size: 16px;
+}
+.galllery-index .item a {color:#777;}
+
 
 .gallery {margin-top:140px;}
 .gallery img {margin:3px}
@@ -290,6 +304,8 @@ img.logo {
 	height: 250px;
 }
 
+
+/*  MAIN BREAKPOINT CHANGES */
 @media (max-width: 1600px) {
 	img.logo {left:16vw}
 }
@@ -299,14 +315,14 @@ img.logo {
 	.navbar-fixed-top {position: static;} /* make it not fixed */
 	img.logo {left:8vw}
 	.navbar-trans ul {margin-left: 350px;}
-	.jumbotron {margin-top:40px}
+   .top-nav-spacer {height:0;}
 
+	.jumbotron {margin-top:40px}
 
 	.round-menu-item.item1 {right:-12px}
 	.round-menu-item.item3 {left:-12px}
 	.round-menu-item {top:-50px;}
 	.round-menu .height-holder {height:200px;}
-	/*.round-menu {background: yellow;}*/
 	.contact-item.item1{right:-45px;}
 	.contact-item.item3{left:-45px;}
 }
@@ -321,7 +337,6 @@ img.logo {
 	.round-menu-item.item3 {left:10px}
 	.round-menu-item {top:40px;}
 	.round-menu .height-holder {height:280px;}
-	/*.round-menu {background: green;}*/
 
 	.about .block1{border: none}
 	.about .block3{
@@ -341,8 +356,6 @@ img.logo {
 
 	.contact-item.item1{right:0;}
 	.contact-item.item3{left:0;}
-
-
 }
 
 @media (max-width: 800px) {
@@ -350,7 +363,6 @@ img.logo {
 		left:calc(50% - 115px)
 	}
 	.video-container .hero-video-wrapper {height: calc(60vw);}
-
 }
 
 @media (max-width: 765px){
@@ -364,6 +376,7 @@ img.logo {
 		left: calc(50% - 100px);
 	}
 	.contact-container .height-holder{height: 480px;}
+
 }
 
 @media (max-width: 530px) {
@@ -384,7 +397,12 @@ img.logo {
 	.about .block3{
 		height:320px;
 	}
+
+   /* Add another column size */
+   .col-xxs-12 { width: 100% }
 }
+
+
 
 /* Hamburger overrides */
 .navbar-default .navbar-toggle {
