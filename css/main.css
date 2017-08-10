@@ -166,14 +166,11 @@ img.logo {
 }
 .galllery-index .item a {color:#777;}
 
-
-.gallery {margin-top:140px;}
+.gallery .col {
+   padding:2px 5px 1px 5px;
+}
 .gallery img {margin:3px}
-.gallery img.tall {width:371px;}
-.gallery img.short {width:514px;}
-.gallery img.small-square {width:562px;}
-.gallery img.full {width:1130px;}
-.gallery img.square {width:610px;}
+.gallery img {width: 100%}
 
 .jumbotron.contact-jumbotron {padding:70px 0 120px 0;}
 .jumbotron.contact-jumbotron h1 {
