@@ -166,8 +166,13 @@ img.logo {
 }
 .galllery-index .item a {color:#777;}
 
+/* Gallery Grid Mod */
+@media (min-width: 1200px){
+   .container.gallery {width: 1080px;}
+}
+
 .gallery .col {
-   padding:2px 5px 1px 5px;
+   padding:0px 4px 0px 4px;
 }
 .gallery img {margin:3px}
 .gallery img {width: 100%}
