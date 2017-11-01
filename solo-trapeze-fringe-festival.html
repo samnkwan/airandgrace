@@ -11,11 +11,9 @@
 
 	<!-- Custom styles for this template -->
    <link href="css/carousel.css" rel="stylesheet">
-	<link href="css/main.css?1" rel="stylesheet">
+	<link href="css/main.css?2" rel="stylesheet">
 
    <link href="fonts/fonts.css" rel="stylesheet">
-
-
 
 	</head>
 	<body>
@@ -46,62 +44,37 @@
       </nav>
 
    <div class="top-nav-spacer"></div>
-
-   <div class="container gallery-index">
+   <div class="container gallery">
+      <div class="row">
+         <div class="col col-md-12"><h3>SOLO TRAPEZE | FRINGE FESTIVAL</h3></div>
+      </div>
    	<div class="row">
-         <div class="col-sm-4 col-xs-6 col-xxs-12">
-            <div class="item">
-               <a href="life-in-a-toy-box.html">
-                  <img src="img/gallery-index/silks-life-in-a-toy-box.jpg" alt="Air &amp; Grace">
-                  <div class="title">SILKS | LIFE IN A TOY BOX</div>
-               </a>
-            </div>
-   		</div>
-         <div class="col-sm-4 col-xs-6 col-xxs-12">
-            <div class="item">
-               <a href="silks-danse-carnival.html">
-                  <img src="img/gallery-index/silks-danse-carnival.jpg" alt="Air &amp; Grace">
-                  <div class="title">SILKS | DANSE CARNIVAL</div>
-               </a>
-            </div>
-   		</div>
-         <div class="col-sm-4 col-xs-6 col-xxs-12">
-            <div class="item">
-               <a href="trapeze-danse-carnival.html">
-                  <img src="img/gallery-index/trapeze-danse-carnival.jpg" alt="Air &amp; Grace">
-                  <div class="title">TRAPEZE | DANSE CARNIVAL</div>
-               </a>
-            </div>
-   		</div>
+         <div class="col col-sm-5"><img class="lazy" data-original="img/gallery/solo-trapeze-fringe-festival/11.jpg" alt="Air &amp; Grace"></div>
+         <div class="col col-sm-7"><img class="lazy" data-original="img/gallery/solo-trapeze-fringe-festival/1.jpg" alt="Air &amp; Grace"></div>
 
-         <div class="col-sm-4 col-xs-6 col-xxs-12">
-            <div class="item">
-               <a href="solo-trapeze-fringe-festival.html">
-                  <img src="img/gallery-index/solo-trapeze-fringe-festival.jpg" alt="Air &amp; Grace">
-                  <div class="title">SOLO TRAPEZE | FRINGE FESTIVAL</div>
-               </a>
-            </div>
-   		</div>
-         <div class="col-sm-4 col-xs-6 col-xxs-12">
-            <div class="item">
-               <a href="cloud-swing.html">
-                  <img src="img/gallery-index/cloud-swing.jpg" alt="Air &amp; Grace">
-                  <div class="title">CLOUD SWING</div>
-               </a>
-            </div>
-   		</div>
-         <div class="col-sm-4 col-xs-6 col-xxs-12">
-            <div class="item">
-               <a href="solo-trapeze-bauer-media.html">
-                  <img src="img/gallery-index/solo-trapeze-bauer-media.jpg" alt="Air &amp; Grace">
-                  <div class="title">SOLO TRAPEZE | BAUER MEDIA</div>
-               </a>
-            </div>
-   		</div>
+         <div class="col col-sm-12"><img class="lazy" data-original="img/gallery/solo-trapeze-fringe-festival/7.jpg" alt="Air &amp; Grace"></div>
+
+         <div class="col col-sm-7"><img class="lazy" data-original="img/gallery/solo-trapeze-fringe-festival/2.jpg" alt="Air &amp; Grace"></div>
+         <div class="col col-sm-5"><img class="lazy" data-original="img/gallery/solo-trapeze-fringe-festival/8.jpg" alt="Air &amp; Grace"></div>
+
+         <div class="col col-sm-7"><img class="lazy" data-original="img/gallery/solo-trapeze-fringe-festival/3.jpg" alt="Air &amp; Grace"></div>
+         <div class="col col-sm-5"><img class="lazy" data-original="img/gallery/solo-trapeze-fringe-festival/10.jpg" alt="Air &amp; Grace"></div>
+
+
+         <div class="col col-sm-12"><img class="lazy" data-original="img/gallery/solo-trapeze-fringe-festival/5.jpg" alt="Air &amp; Grace"></div>
+
+
+         <div class="col col-sm-5"><img class="lazy" data-original="img/gallery/solo-trapeze-fringe-festival/9.jpg" alt="Air &amp; Grace"></div>
+         <div class="col col-sm-7"><img class="lazy" data-original="img/gallery/solo-trapeze-fringe-festival/6.jpg" alt="Air &amp; Grace"></div>
+
+         <div class="col col-sm-7"><img class="lazy" data-original="img/gallery/solo-trapeze-fringe-festival/4.jpg" alt="Air &amp; Grace"></div>
+
+
+
+
+        </div>
    	</div>
    </div>
-
-
 
    <div class="container social">
       <div class="row">
@@ -121,7 +94,6 @@
       </div>
    </div>
 
-
    <div class="container footer">
    	<div class="row">
    		 <div class="col-lg-12">
@@ -132,7 +104,14 @@
 
 
 
-</body>
+
+
+
+
+
+
+
+	</body>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -140,7 +119,14 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bs/js/bootstrap.min.js"></script>
 <script src="js/jquery-ui-1.8.18.custom.min.js"></script>
-
+<script src="js/jquery.lazyload.min.js"></script>
+<script>
+	$(function() {
+		$("img.lazy").lazyload({
+			effect : "fadeIn"
+		});
+	});
+</script>
 
 
 </html>
