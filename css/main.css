@@ -133,14 +133,15 @@ img.logo {
 .social {margin-top:100px;}
 .social hr.socialline {border-top: 2px solid #c4c4c4;margin:0;}
 .social-box {
+	/*background:green;*/
 	background:#fff;
-	width:500px;
+	width:432px;
 	height:60px;
 	margin: 0 auto;
 	margin-top:-30px;
 }
 .social-box .sayhello {
-	margin:0 30px 0 30px;
+	margin:0 12px 0 30px;
 	width: 150px;
 	font-family: 'Nella Sue Reg';
 	font-size:38px;
@@ -149,7 +150,7 @@ img.logo {
 }
 .social-box .social-icon-wrapper {
 	/*background: yellow;*/
-	width: 266px;
+	width: 220px;
 	float: left;
 	padding-top: 16px;
 }
@@ -387,11 +388,11 @@ img.logo {
 	.social-box {width: 100%}
 	.social-box .sayhello {
 		clear:both;
-		margin-left: calc(50vw - 95px) ;
+		margin-left: calc(50vw - 90px) ;
 	}
 	.social-box .social-icon-wrapper {
 		clear:both;
-		margin-left: calc(50vw - 155px);
+		margin-left: calc(50vw - 130px);
 	}
 	.about .block{
 		padding:0 30px;
