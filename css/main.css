@@ -44,6 +44,7 @@ img.logo {
 	top:0;
 	z-index:99;
 	left:20vw;
+   max-width:300px;
 }
 
 .top-nav-spacer {height:160px;}
