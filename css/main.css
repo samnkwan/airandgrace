@@ -183,6 +183,7 @@ img.logo {
 /* image heigh mismatch issue */
 .gallery img.square-lg {
    max-height: 557px;
+   max-height: 674px;
 }
 
 .jumbotron.contact-jumbotron {padding:70px 0 120px 0;}
@@ -352,6 +353,11 @@ img.logo {
 
    /* Gallery Grid Mod */
    /*.container.gallery {max-width: 1080px;}*/
+
+   /* image heigh mismatch issue */
+   .gallery img.square-lg {
+      max-height: 557px;
+   }
 
 }
 
