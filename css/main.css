@@ -175,8 +175,15 @@ img.logo {
 .gallery .col {
    padding:0px 4px 0px 4px;
 }
-.gallery img {margin:3px}
-.gallery img {width: 100%}
+.gallery img {
+   width: 100%;
+   margin:3px;
+}
+
+/* image heigh mismatch issue */
+.gallery img.square-lg {
+   max-height: 557px;
+}
 
 .jumbotron.contact-jumbotron {padding:70px 0 120px 0;}
 .jumbotron.contact-jumbotron h1 {
@@ -344,7 +351,7 @@ img.logo {
 	.contact-item.item3{left:-45px;}
 
    /* Gallery Grid Mod */
-   .container.gallery {width: 1080px;}
+   /*.container.gallery {max-width: 1080px;}*/
 
 }
 
@@ -378,6 +385,11 @@ img.logo {
 	.contact-item.item1{right:0;}
 	.contact-item.item3{left:0;}
 
+   /* image heigh mismatch issue */
+   .gallery img.square-lg {
+      max-height: 428px;
+   }
+
 }
 
 @media (max-width: 800px) {
@@ -403,6 +415,11 @@ img.logo {
    .contact-confirmation-message {
       font-size: 24px;
       padding: 20px 20px 0px;
+   }
+
+   /* image heigh mismatch issue */
+   .gallery img.square-lg {
+      max-height: none;
    }
 
 }
