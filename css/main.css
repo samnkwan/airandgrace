@@ -29,16 +29,20 @@ h1 {
 	margin-top:140px
 }
 
-.navbar-trans {background: rgba(255,255,255, 0.7);border:none;}
-.navbar-trans ul {margin:35px 0 0 450px;}
+.navbar-trans {
+   background: rgba(255,255,255, 0.7);
+   border:none;
+   margin-bottom: 0px;
+}
+.navbar-trans ul {margin:31px 0 0 450px;}
 .navbar-trans li a {
 	font-family: 'Helvetica Neue Lt Com Lt Con';
 	line-height:50px;
 	font-size:20px;
-	padding: 15px 22px;
+	padding: 12px 22px 12px 22px;
 }
 
-
+.navbar-brand {min-height: 62px;}
 img.logo {
 	position:absolute;
 	top:0;
@@ -335,7 +339,7 @@ img.logo {
 	img.logo {left:2vw}
 
 	.navbar-trans ul {margin-left: 280px;}
-	.navbar-trans li a {padding: 0 12px}
+	.navbar-trans li a {padding: 12px;}
 
 	.round-menu-item.item1 {right:10px}
 	.round-menu-item.item3 {left:10px}
@@ -363,6 +367,7 @@ img.logo {
 }
 
 @media (max-width: 800px) {
+   .navbar-trans li a {padding: 3px;}
 	.round-menu-item.item1, .round-menu-item.item3 {
 		left:calc(50% - 115px)
 	}
@@ -370,7 +375,7 @@ img.logo {
 }
 
 @media (max-width: 765px){
-	img.logo {height:80px;}
+	img.logo {height:70px;}
 	.navbar-trans ul {margin:10px 0 0;text-align: center;}
 
 	.contact-triple .row .height-holder {height: 260px;}
@@ -384,11 +389,10 @@ img.logo {
 }
 
 @media (max-width: 530px) {
-	.navbar-trans ul {margin-top:40px;}
 	.social-box {width: 100%}
 	.social-box .sayhello {
 		clear:both;
-		margin-left: calc(50vw - 90px) ;
+		margin-left: calc(50vw - 95px) ;
 	}
 	.social-box .social-icon-wrapper {
 		clear:both;
