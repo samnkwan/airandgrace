@@ -51,7 +51,7 @@ img.logo {
    max-width:300px;
 }
 
-.top-nav-spacer {height:160px;}
+.top-nav-spacer {height:130px;}
 
 .copyright {
 	font-family: 'Helvetica Neue Lt Com U Lt';
@@ -332,7 +332,7 @@ img.logo {
 	.navbar-fixed-top {position: static;} /* make it not fixed */
 	img.logo {left:8vw}
 	.navbar-trans ul {margin-left: 350px;}
-   .top-nav-spacer {height:0;}
+   .top-nav-spacer {height:20px;}
 
 	.jumbotron {margin-top:40px}
 
