@@ -1,6 +1,4 @@
 <?php
-var_dump($_POST);
-
    $name    = '';
    $email   = '';
    $phone   = '';
@@ -11,55 +9,50 @@ var_dump($_POST);
    $phoneErrMessage  = 'Please enter your phone number';
    $messageErrMessage= 'Please add a message';
 
+   if(isset($_POST['send'])){
 
-if(isset($_POST['send'])){
+      $name    = $_POST['name'];
+      $email   = $_POST['email'];
+      $phone   = $_POST['phone'];
+      $message = $_POST['message'];
 
-   $name    = $_POST['name'];
-   $email   = $_POST['email'];
-   $phone   = $_POST['phone'];
-   $message = $_POST['message'];
+      // do some server side validation
+      $bPassed          = false;
+      $bPassedName      = false;
+      $bPassedPhone     = true;
+      $bPassedEmail     = false;
+      $bPassedMessage   = false;
 
-   // do some server side validation
-   $bPassed          = false;
-   $bPassedName      = false;
-   $bPassedPhone     = true;
-   $bPassedEmail     = false;
-   $bPassedMessage   = false;
+      $bPassedName = strlen($_POST['name']) ? true : false;
+      $bPassedEmail =  (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) ? true : false;
+      $bPassedMessage = strlen($_POST['message']) ? true : false;
 
+      $bPassed = ($bPassedName && $bPassedPhone && $bPassedEmail && $bPassedMessage) ? true : false;
 
+      if($bPassed){
 
-   if(strlen($_POST['name'])){
+         // Send the email yo.
 
+         echo '<script>window.location = "contact-confirmation.html";</script>';
+      }
 
-   }
-
-   $bPassedName = strlen($_POST['name']) ? true : false;
-   $bPassedEmail =  (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) ? true : false;
-   $bPassedMessage = strlen($_POST['message']) ? true : false;
-
-   $bPassed = ($bPassedName && $bPassedPhone && $bPassedEmail && $bPassedMessage) ? true : false;
-
-
-var_dump($bPassed);
-
-   //  $to = "email@example.com"; // this is your Email address
-   //  $from = $_POST['email']; // this is the sender's Email address
-   //  $first_name = $_POST['first_name'];
-   //  $last_name = $_POST['last_name'];
-   //  $subject = "Form submission";
-   //  $subject2 = "Copy of your form submission";
-   //  $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
-   //  $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
-    //
-   //  $headers = "From:" . $from;
-   //  $headers2 = "From:" . $to;
-   //  mail($to,$subject,$message,$headers);
-   //  mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-   //  echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
+      //  $to = "email@example.com"; // this is your Email address
+      //  $from = $_POST['email']; // this is the sender's Email address
+      //  $first_name = $_POST['first_name'];
+      //  $last_name = $_POST['last_name'];
+      //  $subject = "Form submission";
+      //  $subject2 = "Copy of your form submission";
+      //  $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+      //  $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+       //
+      //  $headers = "From:" . $from;
+      //  $headers2 = "From:" . $to;
+      //  mail($to,$subject,$message,$headers);
+      //  mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+      //  echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+       // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -73,7 +66,7 @@ var_dump($bPassed);
 
    	<!-- Custom styles for this template -->
       <link href="css/carousel.css" rel="stylesheet">
-   	<link href="css/main.css?3" rel="stylesheet">
+   	<link href="css/main.css?4" rel="stylesheet">
 
       <link href="fonts/fonts.css" rel="stylesheet">
 
