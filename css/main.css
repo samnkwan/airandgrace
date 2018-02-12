@@ -414,7 +414,7 @@ img.logo {
 	.video-container .hero-video-wrapper {height: calc(60vw);}
 
    /* gallery padding issue */
-   .gallery {padding-right: 22px;}
+   .gallery {padding-right: 21px;}
 }
 
 @media (max-width: 765px){
