@@ -24,6 +24,13 @@ h1 {
 	font-size:36px;
 }
 
+.gallery h1 {
+   font-family: 'Helvetica Neue Lt Com Th', Helvetica, Sans-Serif;
+   font-size:24px;
+	color:#3d3d3d;
+   padding-left: 5px;
+}
+
 .jumbotron {
 	background:#e5e5e5;
 	margin-top:140px
@@ -405,6 +412,9 @@ img.logo {
 		left:calc(50% - 115px)
 	}
 	.video-container .hero-video-wrapper {height: calc(60vw);}
+
+   /* gallery padding issue */
+   .gallery {padding-right: 22px;}
 }
 
 @media (max-width: 765px){
