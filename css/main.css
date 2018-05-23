@@ -19,7 +19,6 @@ a:hover {
    text-decoration: none;
 }
 h1 {
-	font-family: 'Nella Sue Reg';
 	color:var(--main-pink);
 	font-size:36px;
 }
@@ -145,7 +144,6 @@ img.logo {
 .social {margin-top:100px;}
 .social hr.socialline {border-top: 2px solid #c4c4c4;margin:0;}
 .social-box {
-	/*background:green;*/
 	background:#fff;
 	width:432px;
 	height:60px;
@@ -157,11 +155,9 @@ img.logo {
 	width: 150px;
 	font-family: 'Nella Sue Reg';
 	font-size:38px;
-	/*background: blue;*/
 	float: left;
 }
 .social-box .social-icon-wrapper {
-	/*background: yellow;*/
 	width: 220px;
 	float: left;
 	padding-top: 16px;
@@ -196,7 +192,6 @@ img.logo {
 
 .jumbotron.contact-jumbotron {padding:70px 0 120px 0;}
 .jumbotron.contact-jumbotron h1 {
-	font-family: 'Nella Sue Reg';
 	color:var(--main-pink);
 	font-size:36px;
 	margin-top: 0;
