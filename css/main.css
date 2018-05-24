@@ -20,11 +20,12 @@ a:hover {
 }
 h1 {
 	color:var(--main-pink);
-	font-size:36px;
+   font-family: 'Helvetica Neue Lt Com Lt Con';
+	font-size:30px;
 }
 
 .gallery h1 {
-   font-family: 'Helvetica Roman', Helvetica, Sans-Serif;
+   font-family: 'Helvetica Neue Lt Com Lt Con';
    font-size:24px;
 	color:#3d3d3d;
    padding-left: 5px;
@@ -42,7 +43,7 @@ h1 {
 }
 .navbar-trans ul {margin:31px 0 0 450px;}
 .navbar-trans li a {
-	font-family: 'Helvetica Roman', Helvetica, Sans-Serif;
+	font-family: 'Helvetica Neue Lt Com Lt Con';
 	line-height:50px;
 	font-size:20px;
 	padding: 12px 22px 12px 22px;
@@ -60,7 +61,7 @@ img.logo {
 .top-nav-spacer {height:130px;}
 
 .copyright {
-	font-family: 'Helvetica Roman', Helvetica, Sans-Serif;
+   font-family: 'Helvetica Neue Lt Com U Lt';
 	font-size:16px;
 }
 
@@ -68,7 +69,7 @@ img.logo {
 .round-menu {
 	padding-top:0;
 	margin-top:0px;
-	font-family: 'Helvetica Roman', Helvetica, Sans-Serif;
+   font-family: 'Helvetica Neue Lt Com Lt Con';
 	font-size: 26px;
 }
 
@@ -101,12 +102,12 @@ img.logo {
 
 .centre-link {
    margin: auto;
-   margin-top:10px;
-   font-size: 22px;
+   margin-top:0px;
+   font-size: 26px;
    /* border: 3px solid green; */
    color:#fff;
 }
-.centre-link.item1 {margin-top:52px;}
+.centre-link.item1 {margin-top:55px;}
 
 
 .social {margin-top:100px;}
@@ -141,6 +142,7 @@ img.logo {
 }
 .gallery-index .item .title{
    font-size: 16px;
+   font-family: 'Helvetica Neue Lt Com U Lt';
 }
 .galllery-index .item a {color:#777;}
 
@@ -161,7 +163,8 @@ img.logo {
 .jumbotron.contact-jumbotron {padding:70px 0 120px 0;}
 .jumbotron.contact-jumbotron h1 {
 	color:var(--main-pink);
-	font-size:36px;
+   font-family: 'Helvetica Neue Lt Com Lt Con';
+	font-size:30px;
 	margin-top: 0;
 }
 .form-control{
@@ -229,7 +232,7 @@ img.logo {
 	text-align:center;
 	padding:0;
 	position:absolute;
-	font-family: 'Helvetica Roman', Helvetica, Sans-Serif;
+	font-family: 'Helvetica Neue Lt Com Lt Con';
 }
 .contact-item a:hover {text-decoration: none}
 .contact-item h3 {
