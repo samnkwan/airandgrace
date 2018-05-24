@@ -86,60 +86,28 @@ img.logo {
 	width:230px;
 	position: absolute;
 	z-index:999;
-	/*background:yellow;*/
-	/*border:dashed #000 1px;*/
 	top:-80px;
+   text-align:center;
+
 }
 .round-menu-item.item1 {right:-46px}
 .round-menu-item.item3 {left:-46px}
-.round-menu-item.item2 {left:calc(50% - 115px)}
-
-.round-menu-item .minibanner {position: absolute; top:94px;}
-.round-menu-item.item1 .minibanner {right:53px;}
-.round-menu-item.item3 .minibanner {left:53px;}
-.round-menu-item.item2 .minibanner {left:53px;}
-
-
-/* START Ribbon banners ends construction */
-:root {
-  --minibanner-cnr-edge-short: 10px;
-  --minibanner-cnr-edge-long: 20px;
+.round-menu-item.item2 {
+   left:calc(50% - 115px);
+   background-color: #4d4d4d;
+   border-radius:50%;
+   border:2px solid #fff;
 }
 
-.ribbon-cnr {width: 0;height: 0; }
-.cnr-tl {
-  border-top: var(--minibanner-cnr-edge-long) solid #fff;
-  border-left: var(--minibanner-cnr-edge-short) solid transparent;
-  border-right: 0px solid transparent;
+.centre-link {
+   margin: auto;
+   margin-top:10px;
+   font-size: 22px;
+   /* border: 3px solid green; */
+   color:#fff;
 }
-.cnr-tr {
-  border-top: var(--minibanner-cnr-edge-long) solid #fff;
-  border-left: 0px solid transparent;
-  border-right: var(--minibanner-cnr-edge-short) solid transparent;
-}
-.cnr-bl {
-  border-bottom: var(--minibanner-cnr-edge-long) solid #fff;
-  border-left: var(--minibanner-cnr-edge-short) solid transparent;
-  border-right: 0px solid transparent;
-}
-.cnr-br {
-  border-bottom: var(--minibanner-cnr-edge-long) solid #fff;
-  border-left: 0px solid transparent;
-  border-right: var(--minibanner-cnr-edge-short) solid transparent;
-}
+.centre-link.item1 {margin-top:52px;}
 
-.minibanner-end {float:left;}
-.minibanner-center {
-	background:#fff;
-	width:105px;
-	float:left;
-	text-align:center;
-	color:var(--main-pink);
-	height:40px;
-	font-size:20px;
-	line-height:46px;
-}
-/* END Ribbon banners ends construction */
 
 .social {margin-top:100px;}
 .social hr.socialline {border-top: 2px solid #c4c4c4;margin:0;}
