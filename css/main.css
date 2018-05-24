@@ -9,7 +9,7 @@ body {
 	color:#3d3d3d;
 	font-family: 'Helvetica Roman', Helvetica, Sans-Serif;
 }
- p {font-size: 16px;}
+ p {font-size: 15px;}
 
 a {
 	color:#777;
@@ -265,32 +265,13 @@ img.logo {
 }
 
 .about{margin-top:50px;}
-.about .block p {font-size: 15px}
-.about .block1{
-	padding-right:40px;
-	padding-left:40px;
-	border-right: solid #c4c4c4;
-	border-right-width:2px;
-}
 
-.about .block2{
-	padding-left:40px;
-}
-
-.about .block3{
-	padding-right:20px;
-	padding-left:20px;
-}
+.img-block {text-align: center;}
 
 .about .profile-img {
 	border-radius: 50%;
-	height:150px;
-	width:150px;
-	position: absolute;
-	top:-110px;
-	right:0;
-	border: 3px solid #fff;
-	z-index:999;
+	height:260px;
+	width:260px;
 }
 
 
@@ -346,15 +327,6 @@ img.logo {
 	.round-menu-item {top:40px;}
 	.round-menu .height-holder {height:280px;}
 
-	.about .block1{border: none}
-	.about .block3{
-		padding-left:40px;
-		height:300px;
-	}
-	.about .profile-img {
-		top:auto;bottom:0;
-		right: calc(50% - 75px);
-	}
 
 	.video-container .hero-video-wrapper {height: 450px;}
 
@@ -416,13 +388,6 @@ img.logo {
 	.social-box .social-icon-wrapper {
 		clear:both;
 		margin-left: calc(50vw - 130px);
-	}
-	.about .block{
-		padding:0 30px;
-		padding:auto;
-	}
-	.about .block3{
-		height:320px;
 	}
 
    /* Add another column size */
