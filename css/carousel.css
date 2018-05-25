@@ -46,21 +46,18 @@
   text-align: left;
 }
 
-/*@media (max-width: 602px) {
-   .carousel .item .carousel-caption {display: none}
-}*/
+@media (max-width: 765px) {
+   .carousel .item {
+      height:calc(60vw);
+      width: calc(60vw * 2.67861);
+      margin-left: calc( -60vw / 2);
+   }
+}
 
 @media (max-width: 991px) {
    .carousel-indicators {display: none;}
    .carousel-control {z-index: 2;}
 }
-
-@media (max-width: 530px) {
-   .carousel-control {z-index: -1;}
-}
-
-
-
 
 
 
