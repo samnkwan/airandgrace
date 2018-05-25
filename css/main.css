@@ -392,14 +392,21 @@ img.logo {
 }
 
 @media (max-width: 530px) {
-	.social-box {width: 100%}
+   .social-box {
+      width: 100%;
+      margin-bottom: 40px;
+   }
 	.social-box .sayhello {
+      width: 100%;
+      text-align: center;
+      margin: 0;
 		clear:both;
-		margin-left: calc(50vw - 95px) ;
 	}
 	.social-box .social-icon-wrapper {
 		clear:both;
-		margin-left: calc(50vw - 130px);
+      float: none;
+      margin: 0 auto;
+      position: relative;
 	}
 
    /* Add another column size */
