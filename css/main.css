@@ -135,6 +135,18 @@ img.logo {
 
 .footer {text-align:center;height:100px;line-height:50px;margin-top:40px;}
 
+.scroll-top .col{
+   margin-top:40px;
+   text-align: center;
+}
+.scroll-top-link {
+   font-size: 12px;
+}
+.scroll-top-arrow {
+   width: 60px;
+   margin: 10px;
+}
+
 .gallery-index .item { margin-bottom: 40px;}
 .gallery-index .item img {
    width: 100%;
