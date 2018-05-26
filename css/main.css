@@ -9,7 +9,10 @@ body {
 	color:#3d3d3d;
 	font-family: 'Helvetica Roman', Helvetica, Sans-Serif;
 }
- p {font-size: 15px;}
+p {
+   font-size: 15px;
+	color:#424242;
+}
 
 a {
 	color:#777;
@@ -18,7 +21,7 @@ a:hover {
 	color:#777;
    text-decoration: none;
 }
-h1 {
+.jumbotron h1, h1 {
 	color:var(--main-pink);
    font-family: 'Helvetica Neue Lt Com Lt Con';
 	font-size:30px;
@@ -192,40 +195,25 @@ img.logo {
    padding-left: 5px;
 }
 .form-group {
-   width:400px;
+   width:100%;
    float:right;
 }
-.contact-text{width:400px;}
-.contact-text p{font-size: 16px}
+.contact-jumbotron p {font-size: 16px}
+
+input[name="name"] { padding-top:11px;}
+input[name="email"] { padding-top:11px;}
+input[name="phone"] { padding-top:11px;}
+textarea.form-control {padding-top:10px;}
+
 .contact-container .btn-primary {
 	background-color: var(--main-pink);
 	float:left;
 	font-size:18px;
-	height:52px;
-	width:362px;}
+	height:40px;
+	width:100%;
+   padding-top:11px;
+}
 .contact-container .btn-primary:active {background-color: var(--main-pink);box-shadow:none;}
-.contact-container .minibanner {position:static;}
-.contact-container .cnr-tl {
-  border-top: 26px solid var(--main-pink);
-  border-left: 18px solid transparent;
-  border-right: 0px solid transparent;
-}
-.contact-container .cnr-bl {
-  border-bottom: 26px solid var(--main-pink);
-  border-left: 18px solid transparent;
-  border-right: 0px solid transparent;
-}
-.contact-container .cnr-tr {
-  border-top: 26px solid var(--main-pink);
-  border-left: 0px solid transparent;
-  border-right: 18px solid transparent;
-}
-
-.contact-container .cnr-br {
-  border-bottom: 26px solid var(--main-pink);
-  border-left: 0px solid transparent;
-  border-right: 18px solid transparent;
-}
 
 .contact-triple {
 	background-color: none;
@@ -342,10 +330,6 @@ img.logo {
 
 	.video-container .hero-video-wrapper {height: 450px;}
 
-	.form-group {width: 100%;}
-	.contact-container .btn-primary {width:calc(100% - 36px);}
-	.contact-text{ width: 100%}
-
 	.contact-item.item1{right:0;}
 	.contact-item.item3{left:0;}
 
@@ -365,6 +349,8 @@ img.logo {
 
    /* gallery padding issue */
    .gallery {padding-right: 21px;}
+
+   .jumbotron.contact-jumbotron {padding-bottom:20px;}
 }
 
 @media (max-width: 765px){
