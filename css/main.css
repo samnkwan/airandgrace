@@ -1,11 +1,12 @@
 :root {
   --main-pink: #DC7F9B;
+  --bg-offwhite: #fcfcfc;
 }
 
 html{height:100%}
 body {
 	height:100%;
-	background-color:#fcfcfc;
+	background-color:var(--bg-offwhite);
 	color:#3d3d3d;
 	font-family: 'Helvetica Roman', Helvetica, Sans-Serif;
 }
@@ -25,6 +26,7 @@ a:hover {
 	color:var(--main-pink);
    font-family: 'Helvetica Neue Lt Com Lt Con';
 	font-size:30px;
+   margin-bottom:4px;
 }
 
 .gallery h1 {
@@ -32,15 +34,21 @@ a:hover {
    font-size:24px;
 	color:#3d3d3d;
    padding-left: 5px;
+   margin-bottom:10px;
 }
 
 .jumbotron {
 	background:#e5e5e5;
-	margin-top:120px
+	margin-top:105px;
+   padding-top: 20px;
+}
+
+.jumbotron p {
+   font-size: 15px;
 }
 
 .navbar-trans {
-   background: rgba(255,255,255, 0.7);
+   background: rgba(252,252,252, 0.7);
    border:none;
    margin-bottom: 0px;
 }
@@ -55,10 +63,10 @@ a:hover {
 .navbar-brand {min-height: 62px;}
 img.logo {
 	position:absolute;
-	top:0;
+	top:8px;;
 	z-index:99;
 	left:20vw;
-   max-width:300px;
+   max-width:260px;
 }
 
 .top-nav-spacer {height:130px;}
@@ -107,16 +115,15 @@ img.logo {
    margin: auto;
    margin-top:0px;
    font-size: 26px;
-   /* border: 3px solid green; */
    color:#fff;
 }
-.centre-link.item1 {margin-top:55px;}
+.centre-link.item1 {margin-top:60px;}
 
 
 .social {margin-top:100px;}
 .social hr.socialline {border-top: 2px solid #c4c4c4;margin:0;}
 .social-box {
-	background:#fff;
+   background-color:var(--bg-offwhite);
 	width:432px;
 	height:60px;
 	margin: 0 auto;
@@ -175,12 +182,11 @@ img.logo {
    max-height: 674px;
 }
 
-.jumbotron.contact-jumbotron {padding:70px 0 120px 0;}
+.jumbotron.contact-jumbotron {padding-bottom:120px;}
 .jumbotron.contact-jumbotron h1 {
 	color:var(--main-pink);
    font-family: 'Helvetica Neue Lt Com Lt Con';
 	font-size:30px;
-	margin-top: 0;
 }
 .form-control{
 	border-radius:0;
@@ -222,7 +228,6 @@ textarea.form-control {padding-top:10px;}
 }
 
 .contact-triple .row .height-holder {
-	/*border: 1px solid #000;*/
 	height: 280px;
 }
 
@@ -272,6 +277,12 @@ textarea.form-control {padding-top:10px;}
 	border-radius: 50%;
 	height:260px;
 	width:260px;
+   margin-top:20px;
+   margin-bottom: 20px;
+}
+
+.about-jumbotron {
+   margin-top: 40px;
 }
 
 
@@ -354,7 +365,7 @@ textarea.form-control {padding-top:10px;}
 }
 
 @media (max-width: 765px){
-	img.logo {height:70px;}
+	img.logo {height:70px;top:0}
 	.navbar-trans ul {margin:10px 0 0;text-align: center;}
 
 	.contact-triple .row .height-holder {height: 260px;}

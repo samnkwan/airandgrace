@@ -46,6 +46,11 @@
   text-align: left;
 }
 
+.carousel .glyphicon-chevron-left,
+.carousel .glyphicon-chevron-right {
+   display: none;
+}
+
 @media (max-width: 765px) {
    .carousel .item {
       height:calc(60vw);
@@ -57,6 +62,10 @@
 @media (max-width: 991px) {
    .carousel-indicators {display: none;}
    .carousel-control {z-index: 2;}
+   .carousel .glyphicon-chevron-left,
+   .carousel .glyphicon-chevron-right {
+      display: block;
+   }
 }
 
 
