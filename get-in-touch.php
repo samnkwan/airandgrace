@@ -67,8 +67,8 @@
        <link href="bs/css/bootstrap.min.css" rel="stylesheet">
 
    	<!-- Custom styles for this template -->
-      <link href="css/carousel.css?6" rel="stylesheet">
-   	<link href="css/main.css?6" rel="stylesheet">
+      <link href="css/carousel.css?9" rel="stylesheet">
+   	<link href="css/main.css?9" rel="stylesheet">
 
       <link href="fonts/fonts.css" rel="stylesheet">
 
