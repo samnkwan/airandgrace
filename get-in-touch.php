@@ -52,6 +52,11 @@
       //  echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
        // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
+
+    function sendEmail(){
+
+
+   }
 ?>
 
 <!DOCTYPE html>
