@@ -1,12 +1,12 @@
-:root {
+/* :root {
   --main-pink: #DC7F9B;
   --bg-offwhite: #fcfcfc;
-}
+} */
 
 html{height:100%}
 body {
 	height:100%;
-	background-color:var(--bg-offwhite);
+	background-color:#fcfcfc;
 	color:#3d3d3d;
 	font-family: 'Helvetica Roman', Helvetica, Sans-Serif;
 }
@@ -25,14 +25,14 @@ a:hover {
    text-decoration: none;
 }
 .jumbotron h1, h1 {
-	color:var(--main-pink);
-   font-family: 'Helvetica Neue Lt Com Lt Con';
+	color:#DC7F9B;
+   font-family: 'Helvetica Neue Lt Com Lt Con', Helvetica, Sans-Serif;
 	font-size:30px;
    margin-bottom:4px;
 }
 
 .gallery h1 {
-   font-family: 'Helvetica Neue Lt Com Lt Con';
+   font-family: 'Helvetica Neue Lt Com Lt Con', Helvetica, Sans-Serif;
    font-size:24px;
 	color:#3d3d3d;
    padding-left: 5px;
@@ -56,7 +56,7 @@ a:hover {
 }
 .navbar-trans ul {margin:31px 0 0 450px;}
 .navbar-trans li a {
-	font-family: 'Helvetica Neue Lt Com Lt Con';
+	font-family: 'Helvetica Neue Lt Com Lt Con', Helvetica, Sans-Serif;
 	line-height:50px;
 	font-size:20px;
 	padding: 12px 22px 12px 22px;
@@ -74,7 +74,7 @@ img.logo {
 .top-nav-spacer {height:130px;}
 
 .copyright {
-   font-family: 'Helvetica Neue Lt Com U Lt';
+   font-family: 'Helvetica Neue Lt Com U Lt', Helvetica, Sans-Serif;
 	font-size:16px;
 }
 
@@ -82,7 +82,7 @@ img.logo {
 .round-menu {
 	padding-top:0;
 	margin-top:0px;
-   font-family: 'Helvetica Neue Lt Com Lt Con';
+   font-family: 'Helvetica Neue Lt Com Lt Con', Helvetica, Sans-Serif;
 	font-size: 26px;
 }
 
@@ -125,7 +125,7 @@ img.logo {
 .social {margin-top:100px;}
 .social hr.socialline {border-top: 2px solid #c4c4c4;margin:0;}
 .social-box {
-   background-color:var(--bg-offwhite);
+   background-color:#fcfcfc;
 	width:432px;
 	height:60px;
 	margin: 0 auto;
@@ -166,7 +166,7 @@ img.logo {
 }
 .gallery-index .item .title{
    font-size: 16px;
-   font-family: 'Helvetica Neue Lt Com U Lt';
+   font-family: 'Helvetica Neue Lt Com U Lt', Helvetica, Sans-Serif;
 }
 .galllery-index .item a {color:#777;}
 
@@ -186,8 +186,8 @@ img.logo {
 
 .jumbotron.contact-jumbotron {padding-bottom:120px;}
 .jumbotron.contact-jumbotron h1 {
-	color:var(--main-pink);
-   font-family: 'Helvetica Neue Lt Com Lt Con';
+	color:#DC7F9B;
+   font-family: 'Helvetica Neue Lt Com Lt Con', Helvetica, Sans-Serif;
 	font-size:30px;
 }
 .form-control{
@@ -213,14 +213,14 @@ img.logo {
 .contact-jumbotron p {font-size: 16px}
 
 .contact-container .btn-primary {
-	background-color: var(--main-pink);
+	background-color: #DC7F9B;
 	float:left;
 	font-size:18px;
 	height:40px;
 	width:100%;
    padding-top:9px;
 }
-.contact-container .btn-primary:active {background-color: var(--main-pink);box-shadow:none;}
+.contact-container .btn-primary:active {background-color: #DC7F9B;box-shadow:none;}
 
 .contact-triple {
 	background-color: none;
@@ -238,11 +238,11 @@ img.logo {
 	text-align:center;
 	padding:0;
 	position:absolute;
-	font-family: 'Helvetica Neue Lt Com Lt Con';
+	font-family: 'Helvetica Neue Lt Com Lt Con', Helvetica, Sans-Serif;
 }
 .contact-item a:hover {text-decoration: none}
 .contact-item h3 {
-	color: var(--main-pink);
+	color: #DC7F9B;
 	margin-bottom: 5px;
 }
 .contact-item p {
