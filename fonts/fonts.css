@@ -7,7 +7,8 @@
 }
 @font-face {
     font-family: 'Helvetica Neue Lt Com Lt Con';
-    src: url('neue_helvetica/HelveticaNeueLTCom-LtCn.ttf');
+    src: url('neue_helvetica/HelveticaNeueLTCom-LtCn.ttf'),
+         url('neue_helvetica/HelveticaNeueLTCom-LtCn.woff');
 }
 @font-face {
     font-family: 'Helvetica Neue Lt Com U Lt';
@@ -19,5 +20,6 @@
 }
 @font-face {
     font-family: 'Helvetica Roman';
-    src: url('helvetica/HelveticaLTStd-Roman.otf');
+    src: url('helvetica/HelveticaLTStd-Roman.woff'),
+         url('helvetica/HelveticaLTStd-Roman.otf');
 }
