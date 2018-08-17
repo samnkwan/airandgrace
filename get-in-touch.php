@@ -10,10 +10,10 @@
    $messageErrMessage= 'Please add a message';
 
    if(isset($_POST['send'])){
-      $name    = $_POST['name'];
-      $email   = $_POST['email'];
-      $phone   = $_POST['phone'];
-      $message = $_POST['message'];
+      $name    = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+      $email   = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+      $phone   = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
+      $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
       // do some server side validation
       $bPassed          = false;
@@ -30,32 +30,33 @@
 
       if($bPassed){
 
-         // Send the email yo.
+         sendEmail($name,$email,$phone,$message);
 
+         // redirect to thanks page
          echo '<script>window.location = "get-in-touch-confirmation.html";</script>';
       }
 
-      var_dump($message);
-      //  $to = "email@example.com"; // this is your Email address
-      //  $from = $_POST['email']; // this is the sender's Email address
-      //  $first_name = $_POST['first_name'];
-      //  $last_name = $_POST['last_name'];
-      //  $subject = "Form submission";
-      //  $subject2 = "Copy of your form submission";
-      //  $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
-      //  $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
-       //
-      //  $headers = "From:" . $from;
-      //  $headers2 = "From:" . $to;
-      //  mail($to,$subject,$message,$headers);
-      //  mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-      //  echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-       // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 
-    function sendEmail(){
 
+    function sendEmail($name,$email,$phone,$message){
+      $to = 'samnkwan@gmail.com';
+      $subject = "New Message from Air and Grace Website Contact Form";
 
+      $emailBody = '
+Name: '.$name.'
+Email: '.$email.'
+Phone: '.$phone.'
+Message:
+
+'.$message.'
+
+End of Message.';
+
+      $headers = "From: Contact Form<info@studio20.co.nz>";
+
+      // send the email
+      mail($to,$subject,$emailBody,$headers);
    }
 ?>
 
@@ -72,8 +73,8 @@
        <link href="bs/css/bootstrap.min.css" rel="stylesheet">
 
    	<!-- Custom styles for this template -->
-      <link href="css/carousel.css?9" rel="stylesheet">
-   	<link href="css/main.css?9" rel="stylesheet">
+      <link href="css/carousel.css?10" rel="stylesheet">
+   	<link href="css/main.css?10" rel="stylesheet">
 
       <link href="fonts/fonts.css" rel="stylesheet">
 
@@ -147,7 +148,7 @@
          					<div class="help-block with-errors"></div>
          				</div>
          				<div class="form-group">
-         					<textarea id="message" maxlength="1200" name="message" class="form-control" rows="8" placeholder="MESSAGE"><?php echo $message; ?></textarea>
+         					<textarea id="message" maxlength="4000" name="message" class="form-control" rows="8" placeholder="MESSAGE"><?php echo $message; ?></textarea>
                         <?php
                            if(isset($bPassedMessage) && !$bPassedMessage){
                               echo '<div class="help-block with-errors">'.$messageErrMessage.'</div>';
