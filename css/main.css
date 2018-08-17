@@ -54,6 +54,9 @@ a:hover {
    border:none;
    margin-bottom: 0px;
 }
+.navbar-fixed-top .navbar-collapse {
+	max-height: 340px; /* override bootstrap max for 480px landscape */
+}
 .navbar-trans ul {margin:31px 0 0 450px;}
 .navbar-trans li a {
 	font-family: 'Helvetica Neue Lt Com Lt Con', Helvetica, Sans-Serif;
