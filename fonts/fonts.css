@@ -12,11 +12,8 @@
 }
 @font-face {
     font-family: 'Helvetica Neue Lt Com U Lt';
-    src: url('neue_helvetica/HelveticaNeueLTCom-Th.ttf');
-}
-@font-face {
-    font-family: 'Helvetica Neue Lt Com Th';
-    src: url('neue_helvetica/HelveticaNeueLTCom-Th.ttf');
+    src: url('neue_helvetica/HelveticaNeueLTCom-Th.ttf'),
+         url('neue_helvetica/HelveticaNeueLTCom-Th.woff');
 }
 @font-face {
     font-family: 'Helvetica Roman';
