@@ -40,7 +40,7 @@
 
 
     function sendEmail($name,$email,$phone,$message){
-      $to = 'samnkwan@gmail.com';
+      $to = 'info@airandgrace.co.nz';
       $subject = "New Message from Air and Grace Website Contact Form";
 
       $emailBody = '
