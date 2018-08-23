@@ -30,7 +30,10 @@
 
       if($bPassed){
 
-         sendEmail($name,$email,$phone,$message);
+         $to = 'info@airandgrace.co.nz';
+         sendEmail($to,$name,$email,$phone,$message);
+         $to = 'alisha_huish@yahoo.co.nz';
+         sendEmail($to,$name,$email,$phone,$message);
 
          // redirect to thanks page
          echo '<script>window.location = "get-in-touch-confirmation.html";</script>';
@@ -39,8 +42,8 @@
     }
 
 
-    function sendEmail($name,$email,$phone,$message){
-      $to = 'info@airandgrace.co.nz';
+    function sendEmail($to,$name,$email,$phone,$message){
+
       $subject = "New Message from Air and Grace Website Contact Form";
 
       $emailBody = '
@@ -53,11 +56,12 @@ Message:
 
 End of Message.';
 
-      $headers = "From: Contact Form<info@studio20.co.nz>";
+      $headers = "From: Contact Form<info@airandgrace.co.nz>";
 
       // send the email
       mail($to,$subject,$emailBody,$headers);
    }
+
 ?>
 
 <!DOCTYPE html>
