@@ -34,6 +34,8 @@
          sendEmail($to,$name,$email,$phone,$message);
          $to = 'alisha_huish@yahoo.co.nz';
          sendEmail($to,$name,$email,$phone,$message);
+         $to = 'cara.hall2009@gmail.com';
+         sendEmail($to,$name,$email,$phone,$message);
 
          // redirect to thanks page
          echo '<script>window.location = "get-in-touch-confirmation.html";</script>';
